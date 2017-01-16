@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Transcendence Admin</string>
+    <string name="name">Name:</string>
+    <string name="number">Number:</string>
+    <string name="email">Email:</string>
+    <string name="course">Course:</string>
+    <string name="message">Message:</string>
+    <string name="address">Address:</string>
+    <string name="companyLogo">Company Logo</string>
+    <string name="tutor">Tutor:</string>
+    <string name="qualification">Qualification:</string>
+</resources>

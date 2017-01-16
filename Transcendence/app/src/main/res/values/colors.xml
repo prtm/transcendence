@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#C2185B</color>
+    <color name="colorAccent">#00ffcc</color>
+
+    <color name="background">#36373b</color>
+    <color name="primaryColor">#EC407A</color>
+    <color name="secondColor">#F06292</color>
+    <color name="hintColor">#757575</color>
+    <color name="textPrimary">#212121</color>
+    <color name="darkText">#777777</color>
+    <!--<color name="lightbackground">#3f3f3f</color>-->
+    <!--<color name="cornflowerblue">#62cfe3</color>-->
+    <color name="deepPink">#f92772</color>
+    <color name="backdull">#e5e5e5</color>
+    <color name="white">#ffffff</color>
+</resources>

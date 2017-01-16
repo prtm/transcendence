@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/secondColor"
+                android:gravity="center"
+                android:text="@string/signup"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logoCompany"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/company_logo"
+                android:src="@drawable/logo" />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_shape"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/paddingleft"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/hintColor" />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_shape"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/paddingleft"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/hintColor" />
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_shape"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/paddingleft"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/hintColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_shape"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_shape"
+                    android:enabled="false"
+                    android:padding="@dimen/paddingleft"
+                    android:text="@string/_91" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="48dp"
+                    android:background="@color/darkText" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/mNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_shape"
+                    android:hint="@string/number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="@dimen/paddingleft"
+                    android:textColor="@color/textPrimary"
+                    android:textColorHint="@color/hintColor" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/tutorcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/i_am_teacher"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tutorQualification"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/round_shape"
+                android:hint="@string/qualification"
+                android:inputType="textLongMessage"
+                android:padding="@dimen/paddingleft"
+                android:textColor="@color/textPrimary"
+                android:textColorHint="@color/hintColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/termsCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/i_accept"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="openConditions"
+                    android:text="@string/terms"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="@string/signup"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/secondColor"
+        android:gravity="center"
+        android:text="@string/developed_by_rit_solution"
+        android:textColor="@android:color/white" />
+</LinearLayout>
