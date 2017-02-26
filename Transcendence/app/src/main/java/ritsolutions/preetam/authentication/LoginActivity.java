@@ -98,7 +98,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void forgetPassword(View view) {
-        Intent intent = new Intent(LoginActivity.this, ForgetPassword.class);
+        Intent intent = new Intent(LoginActivity.this, ForgetPasswordActivity.class);
         Bundle bundle = new Bundle();
         bundle.putString("email", username.getText().toString());
         intent.putExtras(bundle);

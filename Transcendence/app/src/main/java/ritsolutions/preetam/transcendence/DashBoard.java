@@ -37,9 +37,9 @@ import java.util.List;
 import java.util.Map;
 
 import ritsolutions.preetam.authentication.LoginActivity;
-import ritsolutions.preetam.contact.About_us;
-import ritsolutions.preetam.contact.Contact_Us;
-import ritsolutions.preetam.fragment.Tab_wFragment;
+import ritsolutions.preetam.contact.AboutUsActivity;
+import ritsolutions.preetam.contact.ContactUsActivity;
+import ritsolutions.preetam.fragment.TabWFragment;
 import ritsolutions.preetam.interfacer.OnClickHandler;
 
 public class DashBoard extends AppCompatActivity
@@ -99,11 +99,11 @@ public class DashBoard extends AppCompatActivity
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(Tab_wFragment.newInstance("one"), "Tut");
-        adapter.addFragment(Tab_wFragment.newInstance("two"), "Tut");
-        adapter.addFragment(Tab_wFragment.newInstance("three"), "Prep");
-        adapter.addFragment(Tab_wFragment.newInstance("four"), "Class");
-        adapter.addFragment(Tab_wFragment.newInstance("five"), "Class");
+        adapter.addFragment(TabWFragment.newInstance("one"), "Tut");
+        adapter.addFragment(TabWFragment.newInstance("two"), "Tut");
+        adapter.addFragment(TabWFragment.newInstance("three"), "Prep");
+        adapter.addFragment(TabWFragment.newInstance("four"), "Class");
+        adapter.addFragment(TabWFragment.newInstance("five"), "Class");
 
 
         progressBar.setVisibility(View.VISIBLE);
@@ -196,10 +196,10 @@ public class DashBoard extends AppCompatActivity
         if (id == R.id.nav_login) {
             startActivity(new Intent(DashBoard.this, LoginActivity.class));
         } else if (id == R.id.nav_aboutUs) {
-            startActivity(new Intent(DashBoard.this, About_us.class));
+            startActivity(new Intent(DashBoard.this, AboutUsActivity.class));
 
         } else if (id == R.id.nav_contactUs) {
-            startActivity(new Intent(DashBoard.this, Contact_Us.class));
+            startActivity(new Intent(DashBoard.this, ContactUsActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

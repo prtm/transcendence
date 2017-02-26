@@ -24,10 +24,10 @@
         <activity android:name=".DashBoard" />
         <activity android:name="ritsolutions.preetam.authentication.LoginActivity" />
         <activity android:name="ritsolutions.preetam.authentication.SignupActivity" />
-        <activity android:name=".Terms" />
-        <activity android:name="ritsolutions.preetam.authentication.ForgetPassword" />
-        <activity android:name="ritsolutions.preetam.contact.About_us" />
-        <activity android:name="ritsolutions.preetam.contact.Contact_Us" />
+        <activity android:name=".TermsActivity" />
+        <activity android:name="ritsolutions.preetam.authentication.ForgetPasswordActivity" />
+        <activity android:name="ritsolutions.preetam.contact.AboutUsActivity" />
+        <activity android:name="ritsolutions.preetam.contact.ContactUsActivity" />
 
         <receiver
             android:name=".ConnectivityReceiver"
